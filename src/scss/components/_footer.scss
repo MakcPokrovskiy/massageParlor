@@ -1,0 +1,269 @@
+.footer {
+  margin-bottom: -200px;
+  padding: 130px 0 0px 15px;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 63px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 80px rgba(255, 158, 68, 0.37);
+    background: #0c0c0d;
+  }
+
+  &__contacts {
+    grid-column: 4 span;
+    padding: 50px;
+  }
+
+  &__contact {
+    font-family: 'Vollkorn', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 50px;
+
+    color: #ffffff;
+  }
+
+  &__phone {
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+
+    &:hover {
+      color: rgba(#FBDAA8, 0.8);
+      transform: scale(1.1);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid #fbdaa8;
+      outline-offset: 2px;
+      border-radius: 1px;
+    }
+  }
+
+  &__mail {
+    margin-bottom: 25px;
+    transition: transform 0.2s;
+
+    &:hover {
+      color: rgba(#FBDAA8, 0.8);
+      transform: scale(1.1);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid #fbdaa8;
+      outline-offset: 2px;
+      border-radius: 1px;
+    }
+  }
+
+  &__address {
+    margin-bottom: 55px;
+    font-size: 24px;
+    transition: transform 0.2s;
+
+    &:hover {
+      color: rgba(#FBDAA8, 0.8);
+      transform: scale(1.1);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid #fbdaa8;
+      outline-offset: 2px;
+      border-radius: 1px;
+    }
+  }
+
+  &__map {
+    grid-column: 8 span;
+  }
+
+  &__title {
+    margin-bottom: 47px;
+    font-family: 'Vollkorn', sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 100%;
+    color: #fbdaa8;
+  }
+
+  &__map {
+    iframe {
+      border-radius: 0 15px 15px 0;
+    }
+  }
+
+  &__warning {
+    display: flex;
+    column-gap: 17px;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
+  }
+
+  &__descr {
+    font-family: 'Vollkorn', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+
+    color: rgba(#ffffff, 0.5);
+
+  }
+}
+
+.social {
+  display: flex;
+  column-gap: 10px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background-color: #3f3b36;
+    transition: transform 0.2s;
+
+    &:hover {
+      color: rgba(#FBDAA8, 0.8);
+      transform: scale(1.1);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid #fbdaa8;
+      outline-offset: 2px;
+      border-radius: 1px;
+    }
+  }
+
+  &__link-icon {
+    width: 30px;
+  }
+}
+
+.social__widget {
+
+}
+
+.return {
+  position: sticky;
+  bottom: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  margin-left: 50px;
+  border-radius: 50%;
+  text-align: justify;
+  background-color: #d8a65d;
+  transform: translateY(-50%);
+}
+
+.widget {
+  position: sticky;
+  bottom: 50vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 66px;
+  margin-left: auto;
+  border-radius: 15px;
+  padding: 19px 12px;
+  background: rgba(0, 0, 0, 0.35);
+  transform: translateY(+25%);
+
+  &__link-icon {
+    width: 42px;
+    height: 42px;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.09);
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .footer {
+    &__contacts {
+      padding: 12px;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .footer {
+    &__contacts {
+      padding: 5px;
+    }
+  }
+}
+
+@media(max-width: 970px) {
+  .footer {
+
+    &__contacts {
+      display: flex;
+      grid-column: 12 span;
+      flex-direction: column;
+    }
+
+    &__contact {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+    }
+
+    &__map {
+      grid-column: 12 span;
+    }
+
+    &__phone {
+      &:hover {
+        transform: scale(1);
+      }
+    }
+
+    &__mail {
+      &:hover {
+        transform: scale(1);
+      }
+    }
+
+    &__address {
+      &:hover {
+        transform: scale(1);
+      }
+    }
+
+    &__map {
+      iframe {
+        border-radius: 0;
+      }
+    }
+
+  }
+}
+

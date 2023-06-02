@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0"/>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <link href="css/main.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <title>Массажный салон</title>
+</head>
+
+
+<body class="page">
+  <div class="page__wrapper">
+    <header class="header" id="header">
+  <div class="container header__container">
+    <a class="header__logo logo" href="#">
+      <img src="img/logo-pages.png" alt="logo-pages">
+    </a>
+    <div class="header__burger">
+      <span></span>
+    </div>
+    <nav class="header__menu menu">
+      <ul class="menu__list">
+        <li>
+          <a class="menu__link" href="#programs">Программы</a>
+        </li>
+        <li>
+          <a class="menu__link" href="#masters">Мастера</a>
+        </li>
+        <li>
+          <a class="menu__link" href="#">Интерьеры</a>
+        </li>
+        <li>
+          <a class="menu__link" href="#contacts">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__contact contact">
+      <a class="contact__phone contact__item" href="tel:+7(999)999-99-99">+7 (999) 999-99-99</a>
+      <a class="contact__address contact__item" href="#">ул. Пушкина, д.10</a>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="home">
+  <h1 class="home__title">Массажный
+    салон
+  </h1>
+  <p class="home__descr">Снимите напряжение в любое время в окружении самых опытных мастеров города</p>
+  <button class="home__btn btn">Записаться онлайн</button>
+  <div class="home__modal modal">
+    <button class="modal__close">&times;</button>
+    <h3 class="modal__title">Онлайн-запись</h3>
+    <form class="modal__form form" action="#">
+      <div class="form__section">
+        <label class="form__label" for="phone">Телефон</label>
+        <input class="form__phone form__input" id="phone" type="tel" placeholder="Номер телефона">
+      </div>
+      <div class="form__section">
+        <label class="form__label" for="name">Ваше имя</label>
+        <input class="form__name form__input" id="name" type="tel" placeholder="Ваше имя">
+      </div>
+      <input class="form__btn btn" type="submit" value="Записаться онлайн">
+    </form>
+  </div>
+  <div class="home__overlay"></div>
+</section>
+
+      <section class="programs" id="programs">
+  <div class="container programs__container">
+    <h2 class="programs__title">Наши программы</h2>
+    <ul class="programs__list">
+      <li class="programs__list-item">
+        <div class="programs__card card">
+          <div class="card__bg">
+            <img src="img/programs-card-one.png" alt="massage">
+          </div>
+          <div class="card__content">
+            <h4 class="card__title">Лечебный массаж</h4>
+            <p class="card__descr">Программа Лечебный массаж идеально подходит для тех, кто спешит получить
+              удовольствие.
+            </p>
+            <div class="card__price price">
+              <div class="price__section">
+                <img src="img/watch.svg" alt="watch">
+                <p class="price__watch"><span class="price__watch--fs28">30</span> минут</p>
+              </div>
+              <div class="price__section">
+                <img src="img/coin.svg" alt="coin">
+                <p class="price__coin"><span class="price__watch--fs28">3000</span> рублей</p>
+              </div>
+            </div>
+            <a class="card__more" href="#">
+              <p>Подробнее</p>
+              <img src="img/programs-card-arr.svg" alt="arr">
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="programs__list-item">
+        <div class="programs__card card card">
+          <div class="card__bg">
+            <img src="img/programs-card-two.png" alt="massage">
+          </div>
+          <div class="card__content">
+            <h4 class="card__title card__title--marg">Оздоровительный
+              массаж
+            </h4>
+            <p class="card__descr">Программа Лечебный массаж идеально подходит для тех, кто спешит получить
+              удовольствие.
+            </p>
+            <div class="card__price price">
+              <div class="price__section">
+                <img src="img/watch.svg" alt="watch">
+                <p class="price__watch"><span class="price__watch--fs28">30</span> минут</p>
+              </div>
+              <div class="price__section">
+                <img src="img/coin.svg" alt="coin">
+                <p class="price__coin"><span class="price__watch--fs28">3000</span> рублей</p>
+              </div>
+            </div>
+            <a class="card__more" href="#">
+              <p>Подробнее</p>
+              <img src="img/programs-card-arr.svg" alt="arr">
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="programs__list-item">
+        <div class="programs__card card">
+          <div class="card__bg">
+            <img src="img/programs-card-three.png" alt="massage">
+          </div>
+          <div class="card__content">
+            <h4 class="card__title">Массаж стоп</h4>
+            <p class="card__descr">Программа Лечебный массаж идеально подходит для тех, кто спешит получить
+              удовольствие.
+            </p>
+            <div class="card__price price">
+              <div class="price__section">
+                <img src="img/watch.svg" alt="watch">
+                <p class="price__watch"><span class="price__watch--fs28">30</span> минут</p>
+              </div>
+              <div class="price__section">
+                <img src="img/coin.svg" alt="coin">
+                <p class="price__coin"><span class="price__watch--fs28">3000</span> рублей</p>
+              </div>
+            </div>
+            <a class="card__more" href="#">
+              <p>Подробнее</p>
+              <img src="img/programs-card-arr.svg" alt="arr">
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="programs__list-item">
+        <div class="programs__card card">
+          <div class="card__bg">
+            <img src="img/programs-card-one.png" alt="massage">
+          </div>
+          <div class="card__content">
+            <h4 class="card__title">Массаж ШВЗ</h4>
+            <p class="card__descr">Программа Лечебный массаж идеально подходит для тех, кто спешит получить
+              удовольствие.
+            </p>
+            <div class="card__price price">
+              <div class="price__section">
+                <img src="img/watch.svg" alt="watch">
+                <p class="price__watch"><span class="price__watch--fs28">30</span> минут</p>
+              </div>
+              <div class="price__section">
+                <img src="img/coin.svg" alt="coin">
+                <p class="price__coin"><span class="price__watch--fs28">3000</span> рублей</p>
+              </div>
+            </div>
+            <a class="card__more" href="#">
+              <p>Подробнее</p>
+              <img src="img/programs-card-arr.svg" alt="arr">
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="programs__list-item">
+        <div class="programs__card card">
+          <div class="card__bg">
+            <img src="img/programs-card-two.png" alt="massage">
+          </div>
+          <div class="card__content">
+            <h4 class="card__title">Массаж рук</h4>
+            <p class="card__descr">Программа Лечебный массаж идеально подходит для тех, кто спешит получить
+              удовольствие.
+            </p>
+            <div class="card__price price">
+              <div class="price__section">
+                <img src="img/watch.svg" alt="watch">
+                <p class="price__watch"><span class="price__watch--fs28">30</span> минут</p>
+              </div>
+              <div class="price__section">
+                <img src="img/coin.svg" alt="coin">
+                <p class="price__coin"><span class="price__watch--fs28">3000</span> рублей</p>
+              </div>
+            </div>
+            <a class="card__more" href="#">
+              <p>Подробнее</p>
+              <img src="img/programs-card-arr.svg" alt="arr">
+            </a>
+          </div>
+        </div>
+      </li>
+      <li class="programs__list-item">
+        <div class="programs__card card">
+          <div class="card__bg">
+            <img src="img/programs-card-three.png" alt="massage">
+          </div>
+          <div class="card__content">
+            <h4 class="card__title">Какой-то еще массаж</h4>
+            <p class="card__descr">Программа Лечебный массаж идеально подходит для тех, кто спешит получить
+              удовольствие.
+            </p>
+            <div class="card__price price">
+              <div class="price__section">
+                <img src="img/watch.svg" alt="watch">
+                <p class="price__watch"><span class="price__watch--fs28">30</span> минут</p>
+              </div>
+              <div class="price__section">
+                <img src="img/coin.svg" alt="coin">
+                <p class="price__coin"><span class="price__watch--fs28">3000</span> рублей</p>
+              </div>
+            </div>
+            <a class="card__more" href="#">
+              <p>Подробнее</p>
+              <img src="img/programs-card-arr.svg" alt="arr">
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="masters" id="masters">
+  <div class="container masters__container">
+    <h2 class="masters__title">Наши мастера</h2>
+    <ul class="masters__list">
+      <li class="masters__item">
+        <a class="masters__card masters-card" href="#">
+          <div class="masters-card__bg">
+            <img src="img/masters-one.png" alt="master-one">
+          </div>
+          <div class="masters-card__content">
+            <p class="masters-card__name">Анжела</p>
+            <p class="masters-card__info">20 лет, 165 см</p>
+          </div>
+        </a>
+      </li>
+      <li class="masters__item">
+        <a class="masters__card masters-card" href="#">
+          <div class="masters-card__bg">
+            <img src="img/masters-two.png" alt="master-two">
+          </div>
+          <div class="masters-card__content">
+            <p class="masters-card__name">Анжела</p>
+            <p class="masters-card__info">20 лет, 165 см</p>
+          </div>
+        </a>
+      </li>
+      <li class="masters__item">
+        <a class="masters__card masters-card" href="#">
+          <div class="masters-card__bg">
+            <img src="img/masters-three.png" alt="master-three">
+          </div>
+          <div class="masters-card__content">
+            <p class="masters-card__name">Анжела</p>
+            <p class="masters-card__info">20 лет, 165 см</p>
+          </div>
+        </a>
+      </li>
+      <li class="masters__item">
+        <a class="masters__card masters-card" href="#">
+          <div class="masters-card__bg">
+            <img src="img/masters-four.png" alt="master-four">
+          </div>
+          <div class="masters-card__content">
+            <p class="masters-card__name">Анжела</p>
+            <p class="masters-card__info">20 лет, 165 см</p>
+          </div>
+        </a>
+      </li>
+      <li class="masters__item">
+        <a class="masters__card masters-card" href="#">
+          <div class="masters-card__bg">
+            <img src="img/masters-five.png" alt="master-five">
+          </div>
+          <div class="masters-card__content">
+            <p class="masters-card__name">Анжела</p>
+            <p class="masters-card__info">20 лет, 165 см</p>
+          </div>
+        </a>
+      </li>
+      <li class="masters__item">
+        <a class="masters__card masters-card" href="#">
+          <div class="masters-card__bg">
+            <img src="img/masters-six.png" alt="master-six">
+          </div>
+          <div class="masters-card__content">
+            <p class="masters-card__name">Анжела</p>
+            <p class="masters-card__info">20 лет, 165 см</p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="reviews">
+  <div class="container reviews__container">
+    <h2 class="reviews__title">Отзывы</h2>
+    <!-- <div class="reviews__slider slider"> -->
+    <!--   <div class="slider__list"> -->
+    <!--     <div class="slider__track"> -->
+    <!--       <div class="slider__slide slide"> -->
+    <!--         <div class="slide__filter"></div> -->
+    <!--         <div class="slide__content"> -->
+    <!--           <div class="slide__header"> -->
+    <!--             <div class="slide__name"> -->
+    <!--               <h4 class="slide__name-info">Костя</h4> -->
+    <!--               <p class="slide__age-info">36 лет</p> -->
+    <!--             </div> -->
+    <!--             <div class="slide__rating"> -->
+    <!--               <img src="img/rating-stars.png" alt="rating"> -->
+    <!--             </div> -->
+    <!--           </div> -->
+    <!--           <div class="slide__body"> -->
+    <!--             <p class="slide__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis -->
+    <!--               molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem -->
+    <!--             </p> -->
+    <!--           </div> -->
+    <!--         </div> -->
+    <!--       </div> -->
+    <!--       <div class="slider__slide slide"> -->
+    <!--         <div class="slide__filter"></div> -->
+    <!--         <div class="slide__content"> -->
+    <!--           <div class="slide__header"> -->
+    <!--             <div class="slide__name"> -->
+    <!--               <h4 class="slide__name-info">Никита</h4> -->
+    <!--               <p class="slide__age-info">36 лет</p> -->
+    <!--             </div> -->
+    <!--             <div class="slide__rating"> -->
+    <!--               <img src="img/rating-stars.png" alt="rating"> -->
+    <!--             </div> -->
+    <!--           </div> -->
+    <!--           <div class="slide__body"> -->
+    <!--             <p class="slide__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis -->
+    <!--               molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem -->
+    <!--             </p> -->
+    <!--           </div> -->
+    <!--         </div> -->
+    <!--       </div> -->
+    <!--       <div class="slider__slide slide"> -->
+    <!--         <div class="slide__filter"></div> -->
+    <!--         <div class="slide__content"> -->
+    <!--           <div class="slide__header"> -->
+    <!--             <div class="slide__name"> -->
+    <!--               <h4 class="slide__name-info">Ваня</h4> -->
+    <!--               <p class="slide__age-info">36 лет</p> -->
+    <!--             </div> -->
+    <!--             <div class="slide__rating"> -->
+    <!--               <img src="img/rating-stars.png" alt="rating"> -->
+    <!--             </div> -->
+    <!--           </div> -->
+    <!--           <div class="slide__body"> -->
+    <!--             <p class="slide__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis -->
+    <!--               molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem -->
+    <!--             </p> -->
+    <!--           </div> -->
+    <!--         </div> -->
+    <!--       </div> -->
+    <!--       <div class="slider__slide slide"> -->
+    <!--         <div class="slide__filter"></div> -->
+    <!--         <div class="slide__content"> -->
+    <!--           <div class="slide__header"> -->
+    <!--             <div class="slide__name"> -->
+    <!--               <h4 class="slide__name-info">Саша</h4> -->
+    <!--               <p class="slide__age-info">36 лет</p> -->
+    <!--             </div> -->
+    <!--             <div class="slide__rating"> -->
+    <!--               <img src="img/rating-stars.png" alt="rating"> -->
+    <!--             </div> -->
+    <!--           </div> -->
+    <!--           <div class="slide__body"> -->
+    <!--             <p class="slide__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis -->
+    <!--               molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem -->
+    <!--             </p> -->
+    <!--           </div> -->
+    <!--         </div> -->
+    <!--       </div> -->
+    <!--     </div> -->
+    <!--   </div> -->
+    <!-- </div> -->
+    <div class="swiper mySwiper reviews__slider slider">
+      <div class="swiper-wrapper lider__track">
+        <div class="swiper-slide slider__slide slide">
+          <div class="slide__filter"></div>
+          <div class="slide__content">
+            <div class="slide__header">
+              <div class="slide__name">
+                <h4 class="slide__name-info">Костя</h4>
+                <p class="slide__age-info">36 лет</p>
+              </div>
+              <div class="slide__rating">
+                <img src="img/rating-stars.png" alt="rating">
+              </div>
+            </div>
+            <div class="slide__body">
+              <p class="slide__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slider__slide slide">
+          <div class="slide__filter"></div>
+          <div class="slide__content">
+            <div class="slide__header">
+              <div class="slide__name">
+                <h4 class="slide__name-info">Никита</h4>
+                <p class="slide__age-info">36 лет</p>
+              </div>
+              <div class="slide__rating">
+                <img src="img/rating-stars.png" alt="rating">
+              </div>
+            </div>
+            <div class="slide__body">
+              <p class="slide__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slider__slide slide">
+          <div class="slide__filter"></div>
+          <div class="slide__content">
+            <div class="slide__header">
+              <div class="slide__name">
+                <h4 class="slide__name-info">Ваня</h4>
+                <p class="slide__age-info">36 лет</p>
+              </div>
+              <div class="slide__rating">
+                <img src="img/rating-stars.png" alt="rating">
+              </div>
+            </div>
+            <div class="slide__body">
+              <p class="slide__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slider__slide slide">
+          <div class="slide__filter"></div>
+          <div class="slide__content">
+            <div class="slide__header">
+              <div class="slide__name">
+                <h4 class="slide__name-info">Саша</h4>
+                <p class="slide__age-info">36 лет</p>
+              </div>
+              <div class="slide__rating">
+                <img src="img/rating-stars.png" alt="rating">
+              </div>
+            </div>
+            <div class="slide__body">
+              <p class="slide__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slider__slide slide">
+          <div class="slide__filter"></div>
+          <div class="slide__content">
+            <div class="slide__header">
+              <div class="slide__name">
+                <h4 class="slide__name-info">Василий</h4>
+                <p class="slide__age-info">36 лет</p>
+              </div>
+              <div class="slide__rating">
+                <img src="img/rating-stars.png" alt="rating">
+              </div>
+            </div>
+            <div class="slide__body">
+              <p class="slide__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slider__slide slide">
+          <div class="slide__filter"></div>
+          <div class="slide__content">
+            <div class="slide__header">
+              <div class="slide__name">
+                <h4 class="slide__name-info">Костя</h4>
+                <p class="slide__age-info">36 лет</p>
+              </div>
+              <div class="slide__rating">
+                <img src="img/rating-stars.png" alt="rating">
+              </div>
+            </div>
+            <div class="slide__body">
+              <p class="slide__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slider__slide slide">
+          <div class="slide__filter"></div>
+          <div class="slide__content">
+            <div class="slide__header">
+              <div class="slide__name">
+                <h4 class="slide__name-info">Костя</h4>
+                <p class="slide__age-info">36 лет</p>
+              </div>
+              <div class="slide__rating">
+                <img src="img/rating-stars.png" alt="rating">
+              </div>
+            </div>
+            <div class="slide__body">
+              <p class="slide__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slider__slide slide">
+          <div class="slide__filter"></div>
+          <div class="slide__content">
+            <div class="slide__header">
+              <div class="slide__name">
+                <h4 class="slide__name-info">Костя</h4>
+                <p class="slide__age-info">36 лет</p>
+              </div>
+              <div class="slide__rating">
+                <img src="img/rating-stars.png" alt="rating">
+              </div>
+            </div>
+            <div class="slide__body">
+              <p class="slide__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slider__slide slide">
+          <div class="slide__filter"></div>
+          <div class="slide__content">
+            <div class="slide__header">
+              <div class="slide__name">
+                <h4 class="slide__name-info">Костя</h4>
+                <p class="slide__age-info">36 лет</p>
+              </div>
+              <div class="slide__rating">
+                <img src="img/rating-stars.png" alt="rating">
+              </div>
+            </div>
+            <div class="slide__body">
+              <p class="slide__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slider__slide slide">
+          <div class="slide__filter"></div>
+          <div class="slide__content">
+            <div class="slide__header">
+              <div class="slide__name">
+                <h4 class="slide__name-info">Костя</h4>
+                <p class="slide__age-info">36 лет</p>
+              </div>
+              <div class="slide__rating">
+                <img src="img/rating-stars.png" alt="rating">
+              </div>
+            </div>
+            <div class="slide__body">
+              <p class="slide__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slider__slide slide">
+          <div class="slide__filter"></div>
+          <div class="slide__content">
+            <div class="slide__header">
+              <div class="slide__name">
+                <h4 class="slide__name-info">Костя</h4>
+                <p class="slide__age-info">36 лет</p>
+              </div>
+              <div class="slide__rating">
+                <img src="img/rating-stars.png" alt="rating">
+              </div>
+            </div>
+            <div class="slide__body">
+              <p class="slide__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slider__slide slide">
+          <div class="slide__filter"></div>
+          <div class="slide__content">
+            <div class="slide__header">
+              <div class="slide__name">
+                <h4 class="slide__name-info">Костя</h4>
+                <p class="slide__age-info">36 лет</p>
+              </div>
+              <div class="slide__rating">
+                <img src="img/rating-stars.png" alt="rating">
+              </div>
+            </div>
+            <div class="slide__body">
+              <p class="slide__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
+                molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="contacts">
+  <div class="container footer__container">
+    <div class="footer__content">
+      <div class="footer__contacts ">
+        <h2 class="footer__title">Контакты</h2>
+        <div class="footer__contact">
+          <a class="footer__phone " href="tel:+7(999)999-99-99">+7 (999) 999-99-99</a>
+          <a class="footer__mail" href="mailto:hello@opium.ru">hello@opium.ru</a>
+          <a class="footer__address " href="#">
+            <p>ул. Пушкина, д.10</p>
+          </a>
+        </div>
+        <div class="footer__social social">
+          <a class="social__link" href="#">
+            <svg class="social__link-icon">
+              <use href="img/svg/sprite.svg#whatsApp"></use>
+            </svg>
+          </a>
+          <a class="social__link" href="#">
+            <svg class="social__link-icon">
+              <use href="img/svg/sprite.svg#instagr"></use>
+            </svg>
+          </a>
+          <a class="social__link" href="#">
+            <svg class="social__link-icon">
+              <use href="img/svg/sprite.svg#vk"></use>
+            </svg>
+          </a>
+          <a class="social__link" href="#">
+            <svg class="social__link-icon">
+              <use href="img/svg/sprite.svg#telegram"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2212.9984754633665!2d43.948600585823584!3d56.3125994877555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4151d5a5f4b2a7f7%3A0xc8ab8334be087b16!2z0YPQuy4g0J_Rg9GI0LrQuNC90LAsIDEwLCDQndC40LbQvdC40Lkg0J3QvtCy0LPQvtGA0L7QtCwg0J3QuNC20LXQs9C-0YDQvtC00YHQutCw0Y8g0L7QsdC7LiwgNjAzMDIy!5e0!3m2!1sru!2sru!4v1685680705110!5m2!1sru!2sru"
+          width="100%" height="100%" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div class="footer__warning">
+      <img src="img/18.svg" alt="18+">
+      <p class="footer__descr">Салон эротического массажа «Опиум» не оказывает услуг интимного характера</p>
+    </div>
+  </div>
+</footer>
+
+<div class="social__widget widget">
+  <a class="widget__link" href="#">
+    <svg class="widget__link-icon">
+      <use href="img/svg/sprite.svg#24"></use>
+    </svg>
+  </a>
+  <a class="widget__link" href="#">
+    <svg class="widget__link-icon">
+      <use href="img/svg/sprite.svg#instagr"></use>
+    </svg>
+  </a>
+  <a class="widget__link" href="#">
+    <svg class="widget__link-icon">
+      <use href="img/svg/sprite.svg#vk"></use>
+    </svg>
+  </a>
+  <a class="widget__link" href="#">
+    <svg class="widget__link-icon">
+      <use href="img/svg/sprite.svg#telegram"></use>
+    </svg>
+  </a>
+</div>
+
+<!-- <div class="return"> -->
+<!--   <a href="#header">в начало</a> -->
+<!-- </div> -->
+
+  </div>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</body>
+</html>

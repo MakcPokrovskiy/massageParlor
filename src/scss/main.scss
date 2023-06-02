@@ -1,0 +1,18 @@
+// ------------------ FONTS
+@import "settings/fonts";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Vollkorn:wght@400;500&display=swap');
+// ------------------ RESET
+@import "settings/normalize";
+// ------------------ GLOBAL
+@import "settings/global";
+@import "settings/vars";
+
+// ------------------ COMPONENTS
+
+// ------------------ SECTIONS
+@import "components/header";
+@import "components/home-page";
+@import "components/programs";
+@import "components/masters";
+@import "components/reviews";
+@import "components/footer";

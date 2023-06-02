@@ -1,0 +1,243 @@
+.header {
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-white);
+  }
+
+  &__logo {
+    padding: 16px 8px 8px;
+  }
+
+  &__burger {
+    display: none;
+  }
+
+  &__ {
+    margin-left: 36px;
+  }
+
+  &__contact {
+    padding: 4px 0 0
+  }
+}
+
+.logo {
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #fbdaa8;
+    outline-offset: 2px;
+    border-radius: 1px;
+  }
+}
+
+.menu {
+  width: 742px;
+  height: 101px;
+  border-radius: 0px 0px 15px 15px;
+  padding: 7px 62px 0 101px;
+  background: rgba(0, 0, 0, 0.35);
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    font-family: Vollkorn, serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 31px;
+  }
+
+  &__link {
+    transition: transform 0.2s;
+
+    &:hover {
+      color: rgba(#FBDAA8, 0.8);
+      transform: scale(1.1);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid #fbdaa8;
+      outline-offset: 2px;
+      border-radius: 1px;
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  font-family: Vollkorn, serif;
+
+  &__phone {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  &__item {
+    transition: transform 0.2s;
+
+    &:hover {
+      color: rgba(#FBDAA8, 0.8);
+      transform: scale(1.1);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid #fbdaa8;
+      outline-offset: 2px;
+      border-radius: 1px;
+    }
+  }
+
+  &__address {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: right;
+
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    &__container {
+      padding: 0 10px;
+    }
+
+    &__menu {
+      padding: 0 20px;
+    }
+
+    .menu__list {
+      justify-content: space-around;
+      font-size: calc(20px + (22 - 20) * ((100vw - 1200px) / (1534 - 1200)));
+
+    }
+
+    .contact__phone {
+      font-size: calc(22px + (26 - 22) * ((100vw - 1200px) / (1534 - 1200)));
+    }
+
+    .contact__address {
+      font-size: calc(16px + (20 - 16) * ((100vw - 1200px) / (1534 - 1200)));
+    }
+  }
+}
+
+@media(max-width: 1130px) {
+  .header {
+
+    &__burger {
+      position: sticky;
+      z-index: 3;
+      display: block;
+      width: 30px;
+      height: 20px;
+      cursor: pointer;
+    }
+
+    &__burger::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      height: 2px;
+      background-color: #ffffff;
+      transition: all 0.3s ease 0s;
+    }
+
+    &__burger::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #ffffff;
+      transition: all 0.3s ease 0s;
+    }
+
+    &__burger.active::before {
+      top: 9px;
+      transform: rotate(45deg);
+    }
+
+    &__burger.active::after {
+      bottom: 9px;
+      transform: rotate(-45deg);
+    }
+
+    &__burger.active span {
+      transform: scale(0);
+    }
+
+    &__burger span {
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #ffffff;
+      transition: all 0.3s ease 0s;
+    }
+
+    &__contact.active {
+      top: 0;
+    }
+
+    &__contact {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 10%;
+      padding: 70px 0 0 0;
+      transition: all 0.3s ease 0s;
+    }
+
+    &__menu {
+      position: fixed;
+      top: -100%;
+      left: 25%;
+      z-index: 22;
+      width: 50%;
+      height: 40%;
+      padding: 150px 0 0 0;
+      transition: all 0.3s ease 0s;
+    }
+
+    &__menu.active {
+      top: 0;
+
+      .menu__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        height: 50%;
+        font-size: 40px;
+      }
+    }
+  }
+}
