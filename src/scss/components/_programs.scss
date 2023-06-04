@@ -211,7 +211,9 @@
 }
 
 @media (max-width: 767px) {
+
   .programs {
+    background-image: none;
 
     &__list {
       row-gap: 10px;
