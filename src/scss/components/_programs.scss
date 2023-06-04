@@ -1,5 +1,10 @@
 .programs {
   padding: 227px 0 0 14px;
+  background-image: url("@img/filter-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
 
   &__title {
     margin-bottom: 80px;
