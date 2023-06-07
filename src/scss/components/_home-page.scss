@@ -151,17 +151,19 @@
     height: 45px;
     border-radius: 10px;
     padding-left: 10px;
+    font-size: 25px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      outline: 3px solid #fbdaa8;
+      outline-offset: 2px;
+      border-radius: 1px;
+    }
   }
 
-  &:focus {
-    outline: none;
-  }
-
-  &:focus-visible {
-    outline: 3px solid #fbdaa8;
-    outline-offset: 2px;
-    border-radius: 1px;
-  }
 }
 
 @media (max-width: 1200px) {

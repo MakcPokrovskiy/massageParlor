@@ -1,5 +1,10 @@
 .masters {
   padding-top: 138px;
+  background-image: url("@img/filter-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-backdrop-filter: blur(100px);
+  backdrop-filter: blur(100px);
 
   &__title {
     margin-bottom: 80px;
@@ -142,6 +147,7 @@
 
 @media (max-width: 767px) {
   .masters {
+    background-image: none;
 
     &__card {
       height: 450px;
