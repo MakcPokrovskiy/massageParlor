@@ -63,4 +63,99 @@ window.addEventListener('DOMContentLoaded', () => {
     keyboard: true,
   });
 
+  //card
+  class MenuCard {
+    constructor(src, alt, name, info, parentSelector, ...classes) {
+      this.src = src;
+      this.alt = alt;
+      this.nameMaster = name;
+      this.info = info;
+      this.classes = classes;
+      this.parent = document.querySelector(parentSelector);
+      // this.transfer = 80;
+      // this.changeToUAH();
+    }
+
+    // changeToUAH() {
+    //   this.price = this.price * this.transfer;
+    // }
+
+    render() {
+      const element = document.createElement('li');
+      if (this.classes.length === 0) {
+        this.element = 'masters__item';
+        element.classList.add(this.element);
+      } else {
+        this.classes.forEach(className => {
+          element.classList.add(className);
+        });
+      }
+
+      element.innerHTML = `
+      <a class="masters__card masters-card" href="#">
+          <div class="masters-card__bg">
+            <img src=${this.src} alt=${this.alt}>
+          </div>
+          <div class="masters-card__content">
+            <p class="masters-card__name">${this.nameMaster}</p>
+            <p class="masters-card__info">${this.info}</p>
+          </div>
+        </a>
+        `;
+      this.parent.append(element);
+    };
+  }
+
+  new MenuCard(
+    'img/masters-one.png',
+    'master-one',
+    'Анжела',
+    '20 лет, 165 см',
+    '.masters .container .masters__list',
+    'masters__item',
+  ).render();
+
+  new MenuCard(
+    'img/masters-two.png',
+    'master-two',
+    'Анжела',
+    '20 лет, 165 см',
+    '.masters .container .masters__list',
+    'masters__item',
+  ).render();
+
+  new MenuCard(
+    'img/masters-three.png',
+    'master-three',
+    'Анжела',
+    '20 лет, 165 см',
+    '.masters .container .masters__list',
+    'masters__item',
+  ).render();
+  new MenuCard(
+    'img/masters-one.png',
+    'master-one',
+    'Анжела',
+    '20 лет, 165 см',
+    '.masters .container .masters__list',
+    'masters__item',
+  ).render();
+
+  new MenuCard(
+    'img/masters-two.png',
+    'master-two',
+    'Анжела',
+    '20 лет, 165 см',
+    '.masters .container .masters__list',
+    'masters__item',
+  ).render();
+
+  new MenuCard(
+    'img/masters-three.png',
+    'master-three',
+    'Анжела',
+    '20 лет, 165 см',
+    '.masters .container .masters__list',
+    'masters__item',
+  ).render();
 });
