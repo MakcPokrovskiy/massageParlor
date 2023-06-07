@@ -63,8 +63,8 @@ window.addEventListener('DOMContentLoaded', () => {
     keyboard: true,
   });
 
-  //card
-  class MenuCard {
+  //cards masters
+  class MastersCard {
     constructor(src, alt, name, info, parentSelector, ...classes) {
       this.src = src;
       this.alt = alt;
@@ -72,13 +72,7 @@ window.addEventListener('DOMContentLoaded', () => {
       this.info = info;
       this.classes = classes;
       this.parent = document.querySelector(parentSelector);
-      // this.transfer = 80;
-      // this.changeToUAH();
     }
-
-    // changeToUAH() {
-    //   this.price = this.price * this.transfer;
-    // }
 
     render() {
       const element = document.createElement('li');
@@ -106,7 +100,7 @@ window.addEventListener('DOMContentLoaded', () => {
     };
   }
 
-  new MenuCard(
+  new MastersCard(
     'img/masters-one.png',
     'master-one',
     'Анжела',
@@ -115,7 +109,7 @@ window.addEventListener('DOMContentLoaded', () => {
     'masters__item',
   ).render();
 
-  new MenuCard(
+  new MastersCard(
     'img/masters-two.png',
     'master-two',
     'Анжела',
@@ -124,7 +118,7 @@ window.addEventListener('DOMContentLoaded', () => {
     'masters__item',
   ).render();
 
-  new MenuCard(
+  new MastersCard(
     'img/masters-three.png',
     'master-three',
     'Анжела',
@@ -132,7 +126,8 @@ window.addEventListener('DOMContentLoaded', () => {
     '.masters .container .masters__list',
     'masters__item',
   ).render();
-  new MenuCard(
+
+  new MastersCard(
     'img/masters-one.png',
     'master-one',
     'Анжела',
@@ -141,7 +136,7 @@ window.addEventListener('DOMContentLoaded', () => {
     'masters__item',
   ).render();
 
-  new MenuCard(
+  new MastersCard(
     'img/masters-two.png',
     'master-two',
     'Анжела',
@@ -150,7 +145,7 @@ window.addEventListener('DOMContentLoaded', () => {
     'masters__item',
   ).render();
 
-  new MenuCard(
+  new MastersCard(
     'img/masters-three.png',
     'master-three',
     'Анжела',
@@ -158,4 +153,126 @@ window.addEventListener('DOMContentLoaded', () => {
     '.masters .container .masters__list',
     'masters__item',
   ).render();
+
+  //cards programs
+
+  class ProgramsCard {
+    constructor(src, alt, title, descr, watch, price, parentSelector, ...classes) {
+      this.src = src;
+      this.alt = alt;
+      this.title = title;
+      this.descr = descr;
+      this.watch = watch;
+      this.price = price;
+      this.classes = classes;
+      this.parent = document.querySelector(parentSelector);
+    }
+
+    render() {
+      const element = document.createElement('li');
+      if (this.classes.length === 0) {
+        this.element = 'programs__list-item';
+        element.classList.add(this.element);
+      } else {
+        this.classes.forEach(className => {
+          element.classList.add(className);
+        });
+      }
+
+      element.innerHTML = `
+      <div class="programs__card card">
+          <div class="card__bg">
+            <img src=${this.src} alt=${this.alt}>
+          </div>
+          <div class="card__content">
+            <h4 class="card__title">${this.title}</h4>
+            <p class="card__descr">${this.descr}
+            </p>
+            <div class="card__price price">
+              <div class="price__section">
+                <img src="img/watch.svg" alt="watch">
+                <p class="price__watch"><span class="price__watch--fs28">${this.watch}</span> минут</p>
+              </div>
+              <div class="price__section">
+                <img src="img/coin.svg" alt="coin">
+                <p class="price__coin"><span class="price__watch--fs28">${this.price}</span> рублей</p>
+              </div>
+            </div>
+            <a class="card__more" href="#">
+              <p>Подробнее</p>
+              <img src="img/programs-card-arr.svg" alt="arr">
+            </a>
+          </div>
+        </div>
+        `;
+      this.parent.append(element);
+    };
+  }
+
+  new ProgramsCard(
+    'img/programs-card-one.png',
+    'massage',
+    'Лечебный массаж',
+    'Программа Лечебный массаж идеально подходит для тех, кто спешит получить удовольствие.',
+    '30',
+    '3000',
+    '.programs .container .programs__list',
+    'programs__list-item',
+  ).render();
+
+  new ProgramsCard(
+    'img/programs-card-two.png',
+    'massage',
+    'Оздоровительный массаж',
+    'Программа Лечебный массаж идеально подходит для тех, кто спешит получить удовольствие.',
+    '30',
+    '3000',
+    '.programs .container .programs__list',
+    'programs__list-item',
+  ).render();
+
+  new ProgramsCard(
+    'img/programs-card-three.png',
+    'massage',
+    'Массаж стоп',
+    'Программа Лечебный массаж идеально подходит для тех, кто спешит получить удовольствие.',
+    '30',
+    '3000',
+    '.programs .container .programs__list',
+    'programs__list-item',
+  ).render();
+
+  new ProgramsCard(
+    'img/programs-card-one.png',
+    'massage',
+    'Массаж ШВЗ',
+    'Программа Лечебный массаж идеально подходит для тех, кто спешит получить удовольствие.',
+    '30',
+    '3000',
+    '.programs .container .programs__list',
+    'programs__list-item',
+  ).render();
+
+  new ProgramsCard(
+    'img/programs-card-two.png',
+    'massage',
+    'Массаж рук',
+    'Программа Лечебный массаж идеально подходит для тех, кто спешит получить удовольствие.',
+    '30',
+    '3000',
+    '.programs .container .programs__list',
+    'programs__list-item',
+  ).render();
+
+  new ProgramsCard(
+    'img/programs-card-three.png',
+    'massage',
+    'Какой-то еще массаж',
+    'Программа Лечебный массаж идеально подходит для тех, кто спешит получить удовольствие.',
+    '30',
+    '3000',
+    '.programs .container .programs__list',
+    'programs__list-item',
+  ).render();
+
 });
